@@ -1,0 +1,6 @@
+#!/bin/sh
+
+. .env
+
+cp -r bash "$SCRIPTS_OUT_PATH"
+cp -r powershell "$SCRIPTS_OUT_PATH"
