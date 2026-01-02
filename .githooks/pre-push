@@ -1,6 +1,10 @@
 #!/bin/sh
 
+[ -f .env ] || exit
+
 . ./.env
+
+[ -z "$SCRIPTS_OUT_PATH" ] && exit
 
 cp ./bash/* "$SCRIPTS_OUT_PATH"
 cp ./powershell/* "$SCRIPTS_OUT_PATH"
