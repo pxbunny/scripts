@@ -6,5 +6,8 @@
 
 [ -z "$SCRIPTS_OUT_PATH" ] && exit
 
+rm -rf "$SCRIPTS_OUT_PATH"
+mkdir -p "$SCRIPTS_OUT_PATH"
+
 cp ./bash/* "$SCRIPTS_OUT_PATH"
 cp ./powershell/* "$SCRIPTS_OUT_PATH"
