@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -euo pipefail
+
 az login --use-device-code
 
 CREDENTIALS_FILE="azure-credentials.json"
